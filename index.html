@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nominee Information </h1>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Relationship with Nominee</th>
+                    <th>Nominee's Birthday</th>
+                    <th>Phone Number</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" class="input-box" placeholder="Enter Name"></td>
+                    <td><input type="text" class="input-box" placeholder="Enter Relationship"></td>
+                    <td><input type="date" class="input-box"></td>
+                    <td><input type="tel" class="input-box" placeholder="Enter Phone Number"></td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="add" onclick="addRow()">+</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
